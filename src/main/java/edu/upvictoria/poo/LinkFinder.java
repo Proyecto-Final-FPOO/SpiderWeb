@@ -32,7 +32,7 @@ public class LinkFinder implements Runnable{
         if (doc != null){
             for (Element link: doc.select("a[href]")){
                 String next_link = link.absUrl("href");
-                if (!linkHandler.visited(url)){
+                if (linkHandler.visited(next_link) == false){
                     crawler(next_link);
                 }
             }
