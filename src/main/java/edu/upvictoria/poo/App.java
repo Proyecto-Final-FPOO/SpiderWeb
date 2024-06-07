@@ -3,7 +3,8 @@ package edu.upvictoria.poo;
 public class App {
 
     public static void main(String[] args) {
-        new WebCrawler("https://www.imdb.com",64);
+        String link = "https://www.imdb.com/title/tt1517268/?ref_=fn_al_tt_1";
+        new WebCrawler(link,8);
     }
 
 }
